@@ -27,7 +27,7 @@ const PackageCard = () => {
 			<h1 className="text-sky-900 font-bold leading-normal tracking-widest text-4xl mt-3 mb-10">
 				Get FDR Package{" "}
 			</h1>
-			<div className="flex ">
+			<div className="lg:flex ">
 				{data.map((item, index) => (
 					<PackCard key={item.ID} item={item} index={index} />
 				))}

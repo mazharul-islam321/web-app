@@ -9,7 +9,7 @@ import long_arrow from "../../assets/long-arrow.svg";
 
 const PackCard = ({ item, index }) => {
 	return (
-		<div className="w-2/5 h-[800px] mr-7 bg-white rounded-2xl truncate drop-shadow-xl flex flex-col items-center ">
+		<div className="w-3/5 lg:w-2/5 h-[800px] mt-7 lg:mr-7 bg-white rounded-2xl truncate drop-shadow-xl flex flex-col items-center ">
 			<div
 				className={`flex justify-center items-center ${
 					index === 1 && "bg-sky-700"
