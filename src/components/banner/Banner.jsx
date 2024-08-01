@@ -4,9 +4,9 @@ import banner from "../../assets/banner.png";
 
 const Banner = () => {
 	return (
-		<section className=" lg:flex lg:items-center  ml-36 mr-10 ">
+		<section className=" lg:flex lg:items-center mx-6 xl:ml-36 xl:mr-10 ">
 			<div>
-				<h1 className="text-4xl w-2/3  text-sky-900 font-bold leading-normal tracking-widest">
+				<h1 className="text-4xl xl:w-2/3  text-sky-900 font-bold leading-normal tracking-widest">
 					Your money is in your piggy bank. Invest, withdraw and
 					higher yields cash anytime.
 				</h1>
@@ -21,15 +21,19 @@ const Banner = () => {
 				<input
 					type="text"
 					placeholder="Enter your e-mail"
-					className="input w-3/5 md:w-2/5  h-16 border input-bordered ring-gray-950 mr-6 pl-6"
+					className="input mb-4 w-full md:w-2/5  h-16 border input-bordered ring-gray-950 mr-6 pl-6"
 				/>
 
-				<button className="inline-flex items-center justify-center w-64 h-16 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300  focus-visible:outline-none whitespace-nowrap bg-sky-600  disabled:cursor-not-allowed">
+				<button className="inline-flex items-center justify-center w-full md:w-64 h-16 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300  focus-visible:outline-none whitespace-nowrap bg-sky-600  disabled:cursor-not-allowed">
 					<span>Get Early News</span>
 				</button>
 			</div>
 
-			<img src={banner} className="w-1/3" alt="banner image" />
+			<img
+				src={banner}
+				className="mx-auto mt-4 w-1/2 lg:w-1/3"
+				alt="banner image"
+			/>
 		</section>
 	);
 };
